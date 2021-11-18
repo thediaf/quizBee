@@ -30,7 +30,7 @@ class QuizBee extends React.Component{
                 <div>
                     {this.state.questionsBank.length > 0 &&
                         this.state.questionsBank.map(({question, answers, correct, questionId}) => 
-                            <h4><QuestionBox question={question} options={answers} keyt={questionId}/></h4>)
+                            <h4><QuestionBox question={question} options={answers} key={questionId}/></h4>)
                     }
                 </div>
             </div>
